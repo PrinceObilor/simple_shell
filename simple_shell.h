@@ -42,6 +42,7 @@
  * @readfd: the fd from which to read line input
  * @history_count: the history line number count
  */
+
 typedef struct passinfo
 {
 	char *args;
@@ -67,12 +68,11 @@ typedef struct passinfo
 /* strings.c */
 int _strlen(char *);
 int _strcmp(char *, char *);
-char *starts_with(const char *, const char *);
 char *_strcat(char *, char *);
 
 /* more_strings.c */
 char *_strcpy(char *, char *);
-char *_strdup(const char *);
+char *_strdup(char *);
 void _puts(char *);
 int _putchar(char);
 
